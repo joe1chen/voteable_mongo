@@ -18,7 +18,7 @@ describe Mongo::Voteable do
         ].each { |index_key|
 
           klass.collection.indexes.select { |i| i['key'] == index_key }.first.should_not be_nil
-          klass.collection.indexes.select { |i| i['key'] == index_key }.first['unique'].should be_true
+          klass.collection.indexes.select { |i| i['key'] == index_key }.first['unique'].should be_truthy
         }
   
         [ {'votes.count' => -1},

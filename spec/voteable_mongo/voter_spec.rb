@@ -14,14 +14,14 @@ describe Mongo::Voter do
       Post.voted_by(@user1).should be_empty
       Post.up_voted_by(@user1).should be_empty
       Post.down_voted_by(@user1).should be_empty
-      @user1.voted?(@post1).should be_false
-      @user1.voted?(@post2).should be_false
+      @user1.voted?(@post1).should be_falsey
+      @user1.voted?(@post2).should be_falsey
       
       Post.voted_by(@user2).should be_empty
       Post.up_voted_by(@user2).should be_empty
       Post.down_voted_by(@user2).should be_empty
-      @user2.voted?(@post1).should be_false
-      @user2.voted?(@post2).should be_false
+      @user2.voted?(@post1).should be_falsey
+      @user2.voted?(@post2).should be_falsey
     end
     
     it 'revote has no effect' do      

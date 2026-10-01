@@ -1,9 +1,0 @@
-services: mongodb
-
-notifications:
-  email: false
-
-language: ruby
-rvm:
-  - 2.3.3
-
