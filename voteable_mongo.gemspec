@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['RocketScience','Alex Nguyen']
   s.email       = ['i@gleb.tv','alex@vinova.sg']
-  s.homepage    = 'https://github.com/rs-pro/voteable_mongo'
+  s.homepage    = 'https://github.com/joe1chen/voteable_mongo'
   s.summary     = %q{Add up / down voting ability to Mongoid documents}
   s.description = %q{Add up / down voting ability to Mongoid documents. Optimized for speed by using only ONE request to MongoDB to validate, update, and retrieve updated data.}
   s.license       = "MIT"
