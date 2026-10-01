@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
 
   s.add_dependency "mongoid", '>= 7.0', '< 10'
-  s.add_development_dependency 'rspec', '~> 2.14.1'
+  s.add_development_dependency 'rspec', '~> 3.13'
   s.add_development_dependency "bundler"
   s.add_development_dependency "rake", '< 11.0'
 end
