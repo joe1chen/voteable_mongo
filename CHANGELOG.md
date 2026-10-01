@@ -11,7 +11,7 @@ DOGOnews fork. Minor version because the minimum supported Mongoid is unchanged 
 API did not change.
 
 ### Added
-- Mongoid 8 and 9 support (no code changes were needed; the specs pass unchanged on every matrix row).
+- Mongoid 8 and 9 support (no library code changes were needed; the specs only needed the RSpec 3 matcher renames, `be_true` → `be_truthy`).
 - GitHub Actions test matrix (`.github/workflows/test.yml`), seven rows from Ruby 2.7 / Rails 6.1 /
   Mongoid 7.5 / MongoDB 6.0 to Ruby 3.4 / Rails 8.0 / Mongoid 9.0 / MongoDB 8.0. The `Gemfile` selects
   Mongoid and Rails from `MONGOID_VERSION` / `RAILS_VERSION` (default Mongoid 7.5, no Rails pin).
