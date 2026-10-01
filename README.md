@@ -29,11 +29,12 @@ The gemspec allows `mongoid >= 7.0, < 10`.
 
 ## Installation
 
-This fork is not published to RubyGems; install it from GitHub. The gem name is still `rs_voteable_mongo`:
+This fork is not published to RubyGems; install it from GitHub, pinned to a release tag
+([releases](https://github.com/joe1chen/voteable_mongo/releases)):
 
 ```ruby
 # Gemfile
-gem 'rs_voteable_mongo', github: 'joe1chen/voteable_mongo'
+gem 'rs_voteable_mongo', github: 'joe1chen/voteable_mongo', tag: 'v1.4.0'
 ```
 
 Then `bundle install`. In Rails the rake tasks below are registered automatically (via a Railtie).
@@ -154,11 +155,11 @@ To add a combination to CI, add a row to `matrix.include` in `.github/workflows/
 
 ## History
 
-- **1.3.0+ (DOGOnews fork, 2026)** — GitHub Actions matrix up to Ruby 3.4 / Rails 8.0 / Mongoid 9.0 / MongoDB 8.0;
-  mongoid dependency widened to `>= 7.0, < 10`; specs on RSpec 3.
-- **rs-1.x (rs-pro)** — Mongoid 3–7 support, MongoMapper dropped.
-- **Original** — voteable_mongo by Alex Nguyen (Vinova), based on the MongoDB cookbook
-  [voting pattern](http://cookbook.mongodb.org/patterns/votes).
+Alex Nguyen's original (2010, Vinova, published as `voteable_mongoid` and renamed `voteable_mongo` in 0.8.0) was
+continued by RocketScience (rs-pro) as `rs_voteable_mongo` 1.0.0–1.3.0 (2013–2018: Mongoid 3–7, MongoMapper
+dropped) and by DOGOnews in this fork: 1.4.0 (2026: Mongoid 7.0–9.x on current Ruby/Rails/MongoDB, tested by a
+GitHub Actions matrix).
+See [CHANGELOG.md](CHANGELOG.md).
 
 ## Credits
 

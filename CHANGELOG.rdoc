@@ -1,9 +1,0 @@
-== rs-1.1.0
-  * fixes for mongoid 5
-
-== rs-1.0.0
-  * Forked gem
-  * drop mongomapper
-  * Support mongoid 3 and 4
-  * Add Travis-ci
-
